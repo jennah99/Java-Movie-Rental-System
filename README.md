@@ -65,6 +65,7 @@ Example use cases include percentage discounts, fixed-price reductions, and bonu
 ## UML Design
 
 A UML class diagram was developed to model the relationships between customers, rentals, transactions, pricing strategies, and decorators. The diagram was used throughout development to guide system architecture and maintain clear separation of responsibilities between components.
+![UML Class Diagram](SE4352%20MovieRental%20Class%20diagram.png)
 
 ## Key Features
 
