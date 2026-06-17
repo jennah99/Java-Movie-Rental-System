@@ -1,6 +1,7 @@
 # Java Movie Rental System
 
 **Course:** Software Architecture (SE4352) — The University of Texas at Dallas
+
 **Team Members:** Jennah Shahein, Noah Ferenczhalmy, Jason Lehman
 
 ## Overview
