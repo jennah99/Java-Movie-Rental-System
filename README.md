@@ -1,125 +1,78 @@
 # Java Movie Rental System
 
 **Course:** Software Architecture (SE4352) — The University of Texas at Dallas
-
 **Team Members:** Jennah Shahein, Noah Ferenczhalmy, Jason Lehman
 
 ## Overview
 
-This project implements a movie rental management system in Java using object-oriented design principles and software architecture patterns. The system allows customers to rent movies, process transactions, calculate rental prices, and earn bonus points through configurable pricing and rewards strategies.
+The Java Movie Rental System is an object-oriented application designed to simulate the operations of a movie rental business. The system manages customers, movies, rentals, and transactions while supporting flexible pricing and rewards programs.
 
-The project emphasizes extensibility and maintainability through the use of design patterns including Strategy and Decorator, allowing pricing rules and rewards programs to be modified without changing core business logic.
+A primary focus of this project was applying software architecture principles and design patterns to create a system that is maintainable, extensible, and easy to modify as business requirements evolve.
 
-## System Components
+## System Functionality
 
-### 1. Customer Management
+### Customer Management
 
-* Create and manage customer accounts
-* Track customer rental history
-* Maintain accumulated bonus points
+* Create and manage customer records
+* Track customer rental activity
+* Maintain customer reward points
 
-### 2. Movie Management
+### Movie Rentals
 
-* Store movie information
-* Associate movies with rental transactions
-* Support different pricing strategies
+* Store and manage movie information
+* Create rental records
+* Track rental durations and associated charges
 
-### 3. Rental Processing
+### Transaction Processing
 
-* Create movie rental records
-* Track rental duration
-* Calculate rental charges
+* Process rental transactions
+* Calculate rental costs
+* Apply promotional discounts and pricing rules
 
-### 4. Transaction Management
+### Rewards Program
 
-* Process customer transactions
-* Calculate final rental costs
-* Apply discounts and promotions
+* Award bonus points for rentals
+* Support customizable rewards strategies
+* Extend rewards behavior without modifying core classes
 
-## Design Patterns
+## Software Architecture & Design Patterns
 
 ### Strategy Pattern
 
-The Strategy Pattern was used to separate pricing and rewards calculations from the core business objects.
+The Strategy Pattern was implemented to separate pricing and reward calculations from the core business objects. This allows pricing policies and bonus point calculations to be changed independently without affecting the rest of the system.
 
-Implemented Strategies:
+Implemented strategies include:
 
 * PriceStrategy
 * BonusPointsStrategy
 * TransactionPriceStrategy
 * TransactionBonusPointsStrategy
 
-Benefits:
-
-* Supports multiple pricing models
-* Simplifies future business rule changes
-* Improves maintainability
-
 ### Decorator Pattern
 
-The Decorator Pattern was used to dynamically modify pricing and rewards behavior without altering existing classes.
+The Decorator Pattern was used to dynamically extend pricing and rewards functionality. This approach enables promotional discounts and bonus programs to be added without modifying existing business logic.
 
-Implemented Decorators:
+Implemented decorators include:
 
 * PriceDecorator
 * BonusPointsDecorator
 * TransactionPriceDecorator
 * TransactionBonusPointsDecorator
 
-Example Promotions:
-
-* 50% discount pricing
-* Dollar-off discounts
-* Bonus rewards programs
-
-Benefits:
-
-* Extensible promotion system
-* Reusable pricing components
-* Reduced code duplication
+Example use cases include percentage discounts, fixed-price reductions, and bonus reward promotions.
 
 ## UML Design
 
-A UML class diagram was created to model system relationships and architecture.
-
-Included Classes:
-
-* Customer
-* Movie
-* Rental
-* Transaction
-* Strategy Classes
-* Decorator Classes
-
-## Project Structure
-
-```text
-Customer.java
-Movie.java
-Rental.java
-Transaction.java
-
-PriceStrategy.java
-BonusPointsStrategy.java
-TransactionPriceStrategy.java
-TransactionBonusPointsStrategy.java
-
-PriceDecorator.java
-BonusPointsDecorator.java
-TransactionPriceDecorator.java
-TransactionBonusPointsDecorator.java
-
-Main.java
-```
+A UML class diagram was developed to model the relationships between customers, rentals, transactions, pricing strategies, and decorators. The diagram was used throughout development to guide system architecture and maintain clear separation of responsibilities between components.
 
 ## Key Features
 
 * Object-oriented system design
 * Modular pricing architecture
-* Configurable rewards system
+* Flexible rewards program
 * Dynamic discount application
-* Transaction processing
-* UML-based architecture design
+* Transaction processing workflow
+* UML-based software design
 * Strategy Pattern implementation
 * Decorator Pattern implementation
 
@@ -128,17 +81,5 @@ Main.java
 * Java
 * Object-Oriented Programming (OOP)
 * UML Modeling
-* Strategy Pattern
-* Decorator Pattern
-
-## Files
-
-* Main.java — Application entry point
-* Customer.java — Customer management
-* Movie.java — Movie data model
-* Rental.java — Rental processing
-* Transaction.java — Transaction management
-* PriceStrategy.java — Pricing strategy interface
-* BonusPointsStrategy.java — Rewards strategy interface
-* SE4352 MovieRental Class diagram.png — UML class diagram
-
+* Strategy Design Pattern
+* Decorator Design Pattern
