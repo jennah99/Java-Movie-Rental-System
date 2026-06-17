@@ -1,0 +1,40 @@
+# Compiled Java files
+*.class
+
+# Logs
+*.log
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# JVM crash logs
+hs_err_pid*
+
+# IDE files (VS Code)
+.vscode/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# Mac system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# Build directories (if you add them later)
+bin/
+build/
+out/
+
+# Temporary files
+*.tmp
+*.swp
